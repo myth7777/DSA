@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter: ";
+    cin>>n;
+    int ans=0;
+    int i=0;
+    while(n!=0)
+    {
+        int digit = n%10;
+        ans = ans + digit*(pow(2,i));
+        i++;
+        n=n/10;
+    }
+    cout<<ans;
+}
